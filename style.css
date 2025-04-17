@@ -1,22 +1,29 @@
 /* Make launcher button circular and large */
 .vfrc-launcher {
-  width: 80px !important;
-  height: 80px !important;
+  width: 70px !important;
+  height: 70px !important;
   border-radius: 50% !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
   border: none !important;
+  background: transparent !important;
 }
 
-/* Ensure logo fills the circular space */
-.vfrc-launcher--button img {
+/* Replace default icon with your logo */
+.vfrc-launcher--button {
+  background-image: url('https://i.postimg.cc/6pnvnHt8/fluent-Ai-Logo.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+/* Hide default chat icon */
+.vfrc-launcher--button svg {
+  display: none !important;
+}
+
+/* Make sure the button is clickable */
+.vfrc-launcher--button {
   width: 100% !important;
   height: 100% !important;
-  object-fit: contain !important;
-  border-radius: 50% !important;
-}
-
-/* Remove any default background */
-.vfrc-launcher--button {
-  background: transparent !important;
   padding: 0 !important;
 }
