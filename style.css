@@ -1,14 +1,22 @@
-.vfrc-avatar {
+/* Make launcher button circular and large */
+.vfrc-launcher {
   width: 80px !important;
   height: 80px !important;
   border-radius: 50% !important;
-  background: transparent !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
   border: none !important;
-  box-shadow: none !important;
 }
 
-.vfrc-avatar img {
+/* Ensure logo fills the circular space */
+.vfrc-launcher--button img {
   width: 100% !important;
   height: 100% !important;
   object-fit: contain !important;
+  border-radius: 50% !important;
+}
+
+/* Remove any default background */
+.vfrc-launcher--button {
+  background: transparent !important;
+  padding: 0 !important;
 }
