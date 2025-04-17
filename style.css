@@ -1,0 +1,15 @@
+.vfrc-widget-avatar {
+  border-radius: 50% !important;
+  width: 60px;
+  height: 60px;
+}
+
+.vfrc-widget-button__text {
+  font-weight: bold;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #3498db;
+  border-radius: 20px;
+  padding: 5px 12px;
+  margin-left: 10px;
+}
