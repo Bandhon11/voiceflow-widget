@@ -2,15 +2,27 @@
   width: 80px !important;
   height: 80px !important;
   border-radius: 50% !important;
+  padding: 0 !important;
   background-color: transparent !important;
-  background-image: url('https://raw.githubusercontent.com/Bandhon11/voiceflow-widget/main/fluentAiLogo.png') !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
   position: fixed !important;
   bottom: 24px !important;
   right: 24px !important;
   cursor: pointer !important;
   z-index: 9999 !important;
+  overflow: hidden !important;
+}
+
+/* Hide the SVG icon */
+.vfrc-button.vfrc-launcher svg {
+  display: none !important;
+}
+
+/* Style the img inside the button */
+.vfrc-button.vfrc-launcher img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  display: block !important;
 }
