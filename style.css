@@ -1,3 +1,9 @@
-.vfrc-chat {
-  background-color: pink !important;
+.vfrc-chat, 
+.vfrc-message, 
+.vfrc-timestamp, 
+.vfrc-header, 
+.vfrc-footer, 
+.vfrc-input, 
+.vfrc-chat-input--button {
+  font-weight: bold !important;
 }
